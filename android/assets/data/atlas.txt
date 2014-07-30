@@ -1,0 +1,137 @@
+atlas.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+IconoAPP
+  rotate: false
+  xy: 2, 49
+  size: 200, 189
+  orig: 200, 189
+  offset: 0, 0
+  index: -1
+bonoloto
+  rotate: false
+  xy: 180, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+arrow
+  rotate: false
+  xy: 2, 2
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+quintuple
+  rotate: false
+  xy: 86, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+primitiva
+  rotate: false
+  xy: 274, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+euromillon
+  rotate: false
+  xy: 39, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+lototurf
+  rotate: false
+  xy: 86, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+quiniela
+  rotate: false
+  xy: 368, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+barra_titulo
+  rotate: false
+  xy: 2, 1168
+  size: 480, 40
+  orig: 480, 40
+  offset: 0, 0
+  index: -1
+barra_asg
+  rotate: false
+  xy: 2, 1126
+  size: 480, 40
+  orig: 480, 40
+  offset: 0, 0
+  index: -1
+quinigol
+  rotate: false
+  xy: 321, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+barra
+  rotate: false
+  xy: 2, 1084
+  size: 480, 40
+  orig: 480, 40
+  offset: 0, 0
+  index: -1
+LAE
+  rotate: false
+  xy: 415, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fondo
+  rotate: false
+  xy: 2, 1210
+  size: 480, 800
+  orig: 480, 800
+  offset: 0, 0
+  index: -1
+boton2
+  rotate: false
+  xy: 204, 49
+  size: 240, 40
+  orig: 240, 40
+  offset: 0, 0
+  index: -1
+LoadingScreen
+  rotate: false
+  xy: 2, 282
+  size: 480, 800
+  orig: 480, 800
+  offset: 0, 0
+  index: -1
+boton1
+  rotate: false
+  xy: 2, 240
+  size: 240, 40
+  orig: 240, 40
+  offset: 0, 0
+  index: -1
+gordo
+  rotate: false
+  xy: 133, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+nacional
+  rotate: false
+  xy: 227, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1

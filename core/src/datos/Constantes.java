@@ -110,6 +110,9 @@ public class Constantes
 	public static String BDD_ESCRUTINIO_NOMBRE_CAMPO_PREMIO =  "Premio";
 	public static String BDD_ESCRUTINIO_NOMBRE_CAMPO_ACERTANTES =  "Acertantes";
 
+    public final static String ADMOB_ID_BANNER = "ca-app-pub-0229403835501528/4453542197";
+    public final static String ADMOB_ID_INTERSTITIAL = "ca-app-pub-0229403835501528/2579856197";
+
 	public final static int MENU_RESULTADOS_SEMANALES = 0;
 	public final static int MENU_RESULTADOS_TRIMESTRALES = 1;
 	public final static int MENU_ESCRUTINIO = 2;

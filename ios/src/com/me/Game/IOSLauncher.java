@@ -1,7 +1,12 @@
 package com.me.Game;
 
+import com.badlogic.gdx.Application;
+import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
+import com.badlogic.gdx.backends.iosrobovm.IOSApplication.Delegate;
+import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
+import com.badlogic.gdx.utils.Logger;
+import datos.Constantes;
 import interfaces.ActivityLauncher;
-
 import org.robovm.apple.coregraphics.CGRect;
 import org.robovm.apple.coregraphics.CGSize;
 import org.robovm.apple.foundation.NSArray;
@@ -11,20 +16,7 @@ import org.robovm.apple.foundation.NSString;
 import org.robovm.apple.uikit.UIApplication;
 import org.robovm.apple.uikit.UIScreen;
 import org.robovm.apple.uikit.UIViewController;
-import org.robovm.apple.uikit.UIWindow;
-import org.robovm.bindings.admob.GADAdSizeManager;
-import org.robovm.bindings.admob.GADBannerView;
-import org.robovm.bindings.admob.GADBannerViewDelegateAdapter;
-import org.robovm.bindings.admob.GADInterstitial;
-import org.robovm.bindings.admob.GADInterstitialDelegateAdapter;
-import org.robovm.bindings.admob.GADRequest;
-import org.robovm.bindings.admob.GADRequestError;
-
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
-import com.badlogic.gdx.backends.iosrobovm.IOSApplication.Delegate;
-import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import com.badlogic.gdx.utils.Logger;
+import org.robovm.bindings.admob.*;
 
 public class IOSLauncher extends Delegate implements ActivityLauncher
 {
@@ -33,6 +25,7 @@ public class IOSLauncher extends Delegate implements ActivityLauncher
 	private GADBannerView adview;
 	private GADInterstitial iview;
 	private IOSApplication iosApplication;
+
 	
     @Override protected IOSApplication createApplication() 
     {
@@ -52,7 +45,7 @@ public class IOSLauncher extends Delegate implements ActivityLauncher
     public void inicializarInterstitial()
     {
     	iview = new GADInterstitial();
-    	iview.setAdUnitID("ca-app-pub-0229403835501528/2579856197");
+    	iview.setAdUnitID(Constantes.ADMOB_ID_INTERSTITIAL);
 
     	final UIViewController rootViewController = UIApplication.getSharedApplication().getKeyWindow().getRootViewController();
     	final UIViewController adsViewController = new UIViewController();
@@ -78,7 +71,7 @@ public class IOSLauncher extends Delegate implements ActivityLauncher
     public void initializarBanners()
     {
     	adview = new GADBannerView(GADAdSizeManager.smartBannerPortrait());
-    	adview.setAdUnitID("ca-app-pub-0229403835501528/4453542197");
+    	adview.setAdUnitID(Constantes.ADMOB_ID_BANNER);
     	adview.setRootViewController(iosApplication.getUIViewController());
     	iosApplication.getUIViewController().getView().addSubview(adview);
     	
